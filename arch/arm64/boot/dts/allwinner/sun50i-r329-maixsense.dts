@@ -125,7 +125,7 @@
 	status = "okay";
 
 	//ICM_20602 ICM_20689_CS
-	cs-gpios = <&pio 2 0 GPIO_ACTIVE_HIGH>,<&r_pio 0 2 GPIO_ACTIVE_HIGH>;
+	cs-gpios = <&pio 2 0 GPIO_ACTIVE_LOW>,<&r_pio 0 2 GPIO_ACTIVE_HIGH>;
 	spidev@0 {
 		compatible = "spidev";
 		/* spi default max clock 100Mhz */
@@ -148,7 +148,7 @@
 	//<&spi1_cs_ph0>, 
 	status = "okay";
 	//MS5611 PMW3901
-	cs-gpios = <&pio 7 0 GPIO_ACTIVE_HIGH>,<&r_pio 0 3 GPIO_ACTIVE_HIGH>;
+	cs-gpios = <&pio 7 0 GPIO_ACTIVE_LOW>,<&r_pio 0 3 GPIO_ACTIVE_LOW>;
 	spidev@0 {
 		compatible = "spidev";
 		/* spi default max clock 100Mhz */
